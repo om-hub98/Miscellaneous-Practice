@@ -1,0 +1,17 @@
+Q1) What is Locking?
+=> a) Locking is a technique in multithreading to manage access to shared resources by multiple thread.
+   b) When multiple thread tries to access same resource at the same time than it can lead to condition
+      called Critical Situation.
+   C)In order to handle this race condition -> we use concept of mutual exclusion known as locking or synchronization
+
+   Note : Important terminologies : Critical Situation, Race Condition, Mutual Exclusion
+
+Q2) Types Of Locking :
+=> a) Intrinsic lock - using default mechanism such as Synchronize keyword
+   b) Extrinsic lock - using your own customize mechanism such as Lock class
+
+Q3) Important terms in Lock :
+=> a) ReentrantLock => these locks that can be acquired multiple times by the same thread without causing a deadlock.
+   b) tryLock() => this method used for locking thread
+   c) unlock() => for unlocking thread
+   d) lock()

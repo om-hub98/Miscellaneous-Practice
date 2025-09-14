@@ -1,0 +1,17 @@
+Q) What is a S.O.L.I.D design principles?
+=> S - Single Responsibility Principle [ SRP ]
+   O - Open Close Principle            [ OCP ]
+   L - Liskov Substitution Principle   [ LSP ]
+   I - Interface Segregation Principle [ ISP ]
+   D - Dependency Inversion Principle  [ DIP ]
+
+   1) SRP - Single Responsiblity Principle
+   =>  Each class have their own functionality.
+       Classes should not be filled with lots of responsibility.
+
+   2) OCP - Open Close Principle
+   => Classes shouold be open for extension
+       but close for modification.
+
+       In other words - we should not rewrite an existing class for
+       implementing new functionality.

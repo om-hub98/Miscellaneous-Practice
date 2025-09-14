@@ -1,0 +1,17 @@
+Q1) What is Synchronization?
+=> Synchronization is a mechanism of handling the shared resource so that two or more thread would not
+access the same block of code or resources at the same time.
+
+Q2) How to implement synchronization?
+=> By using synchronize keyword in method or in block of code.
+For example :
+    i) synchronizing method :
+             public synchronized void synchronizedMethod() {
+                // code to be synchronized
+             }
+    ii) synchronizing block of code :
+            public void method() {
+                synchronized (this) {
+                    // code to be synchronized
+                }
+            }
