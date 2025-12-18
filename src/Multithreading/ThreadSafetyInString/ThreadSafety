@@ -1,0 +1,14 @@
+
+      =======================================
+
+      What is a Thread Safety ?
+
+      => Thread Safety is a piece of code or object when multiple thread try to access the same resource at the same time,
+       it should not modify the result the result or data should be correct without causing any error.
+
+       | Type              | Mutable? | Thread-safe? | Why?                                              |
+       | ----------------- | -------- | ------------ | ------------------------------------------------- |
+       | **String**        | ❌ No     | ✅ Yes        | Immutable objects, each change creates new object |
+       | **StringBuilder** | ✅ Yes    | ❌ No         | Not synchronized → race conditions                |
+       | **StringBuffer**  | ✅ Yes    | ✅ Yes        | Uses synchronized methods                         |
+

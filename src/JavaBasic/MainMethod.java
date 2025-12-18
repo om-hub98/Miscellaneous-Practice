@@ -11,5 +11,9 @@ public class MainMethod {
     public static void main(Integer[] args) {
         System.out.println("Overloaded Main method..."+ Arrays.toString(args));
         //main(new String[]{"a","b"});
+
+        String str ="Omraj Pradhan";
+        System.out.println(str.indexOf("Pra"));
+        System.out.println((str.replaceFirst("On","Ni")));
     }
 }
