@@ -4,11 +4,12 @@ public class WorkingState implements ATMState{
 
     @Override
     public void withdrawCash() {
-        System.out.println("Withdraw Cash...");
+        System.out.println("Withdrawing Cash...");
     }
 
     @Override
     public void notWorking() {
-        /// some operation
+        System.out.println("ATM is in maintenance mode.. ");
+
     }
 }
