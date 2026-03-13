@@ -1,27 +1,9 @@
-package Searching;
+package Searching.BinarySearch;
 
-import java.util.Arrays;
-import java.util.List;
+public class BinarySearchService {
 
-public class IndexFromRotatedSortedArray {
-    public static void main(String[] args) {
-        List<List<Integer>> listOfArrays = Arrays.asList(
-                Arrays.asList(2,5,6,0,0,1,2),
-                Arrays.asList(1,0,1,1,1)
-        );
-        int[] nums = null;
-        int target = 3;
-        for (List<Integer> arr : listOfArrays) {
-            nums = arr.stream()
-                    .mapToInt(Integer::intValue)
-                    .toArray();
 
-            System.out.println("Index of element : " + search(nums, target));
-        }
-    }
-
-    /*
-    public static int search(int[] nums, int target) {
+    public int binarySearchTargetFromPivotSorted(int[] nums, int target) {
         int left = 0, right = nums.length-1;
         while(left < right){
             int mid = (left+right)/2;
@@ -30,8 +12,21 @@ public class IndexFromRotatedSortedArray {
             else left = mid+1;
         }
         return -1;
-    }*/
-        public static boolean search(int[] nums, int target) {
+    }
+
+    public int binarySearchMinimumElementFromPivotSorted(int[] nums) {
+        int left = 0, right = nums.length-1;
+        while(left < right){
+            int mid = (left+right)/2;
+            if(nums[mid] > nums[right])
+                left = mid+1;
+            else
+                right = mid-1;
+        }
+        return nums[left];
+    }
+
+    public boolean binarySearchTargetElementExistence(int[] nums, int target) {
             int left = 0, right = nums.length - 1;
 
             while (left <= right) {
@@ -65,6 +60,7 @@ public class IndexFromRotatedSortedArray {
 
             return false;
         }
+
 }
 
 
